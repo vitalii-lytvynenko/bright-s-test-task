@@ -1,0 +1,2 @@
+({el:document.querySelector(".btn-up"),show:function(){this.el.classList.remove("btn-up--hide")},hide:function(){this.el.classList.add("btn-up--hide")},addEventListener:function(){var e=this;window.addEventListener("scroll",function(){(window.scrollY||document.documentElement.scrollTop)>100?e.show():e.hide()}),document.querySelector(".btn-up").onclick=function(){window.scrollTo({top:0,left:0,behavior:"smooth"})}}}).addEventListener();
+//# sourceMappingURL=index.2b0d8be3.js.map

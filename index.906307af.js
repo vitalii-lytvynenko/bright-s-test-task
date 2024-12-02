@@ -1,0 +1,2 @@
+var e=document.querySelector(".header"),t=document.querySelector(".headerb"),o=document.querySelector(".footer"),c=document.querySelector(".footerb"),r=document.getElementById("timer"),d=90;!function n(){var a=Math.floor(d/60),l=d%60;r.textContent="".concat(a,":").concat(l<10?"0":"").concat(l),0===d&&(e.classList.toggle("header--hidden"),t.classList.toggle("headerb--hidden"),o.classList.toggle("footer--hidden"),c.classList.toggle("footerb--hidden"),d=90),d--,setTimeout(n,1e3)}();
+//# sourceMappingURL=index.906307af.js.map
