@@ -1,0 +1,36 @@
+.icon {
+  display: block;
+  height: 14px;
+  width: 14px;
+  background-size: cover;
+  background-position: center;
+
+  @include on-tablet {
+    height: 24px;
+    width: 24px;
+  }
+
+  @include on-desktop {
+    height: 34px;
+    width: 34px;
+  }
+
+  &--geo {
+    background-image: url(../images/rakuten/geolocation.svg);
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+  }
+
+  &--span {
+    display: none;
+    margin: 0 5px;
+    color: #828282;
+    max-width: 92px;
+    font-size: 0.9rem;
+
+    @include on-desktop {
+      display: block;
+    }
+  }
+}

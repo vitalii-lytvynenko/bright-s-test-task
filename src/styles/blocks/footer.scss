@@ -1,0 +1,217 @@
+.footer {
+  background-color: #fff;
+
+  &--hidden {
+    display: none;
+  }
+
+  &__top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+
+    border-top: 1px solid #ccc;
+
+    padding-top: 20px;
+
+    @include on-tablet {
+      flex-wrap: nowrap;
+      justify-content: space-between;
+    }
+  }
+
+  &__menu-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #333;
+    gap: 8px;
+    font-size: 1rem;
+
+    width: 70px;
+
+    @include on-tablet {
+      width: auto;
+
+      flex-direction: row;
+      gap: 16px;
+    }
+  }
+
+  &__menu-icon {
+    display: block;
+    width: 48px;
+    height: 48px;
+    background-size: cover;
+    background-position: center;
+
+    &--bag {
+      background-image: url('../images/rakuten/icon-bag.svg');
+    }
+
+    &--club {
+      background-image: url('../images/rakuten/icon-club.svg');
+      width: 96px;
+    }
+
+    &--protect {
+      background-image: url('../images/rakuten/icon-protect.svg');
+    }
+
+    &--chat {
+      background-image: url('../images/rakuten/icon-chat.svg');
+    }
+  }
+
+  &__menu-item {
+    flex: 1 1 50%;
+    max-width: 50%;
+    display: flex;
+    aspect-ratio: 1/1;
+    align-items: center;
+    justify-content: center;
+
+    &:first-child,
+    &:last-child {
+      background-color: #f7f7f7;
+    }
+
+    @include on-tablet {
+      flex: 1;
+      max-width: none;
+      background-color: #fff;
+      aspect-ratio: auto;
+
+      &:first-child,
+      &:last-child {
+        background-color: #fff;
+      }
+    }
+  }
+
+  &__menu-text-block {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__menu-text {
+    color: #777;
+    font-family: sans-serif;
+    line-height: 1;
+
+    &--top {
+      font-size: 0.8rem;
+      font-weight: 700;
+
+      @include on-tablet {
+        font-weight: normal;
+      }
+    }
+
+    &--bottom {
+      font-size: 0.6rem;
+      font-weight: normal;
+
+      @include on-tablet {
+        font-size: 1rem;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-around;
+
+    list-style: none;
+    text-align: left;
+    font-family: sans-serif;
+    padding-top: 30px;
+
+    background-color: #f7f7f7;
+
+    &-item-header {
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    &-item-list {
+      list-style: none;
+      padding: 0;
+      line-height: 2;
+
+      color: #333;
+    }
+  }
+
+  &-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    @include on-tablet {
+      flex-direction: column;
+      text-align: left;
+    }
+
+    &-line {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      @include on-tablet {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+
+    &-products {
+      display: flex;
+      list-style: none;
+      justify-content: space-between;
+      gap: 56px;
+      flex: 1;
+
+      @include on-tablet {
+        justify-content: flex-start;
+      }
+    }
+
+    &-end {
+      margin-block: 16px;
+      font-size: 0.875rem;
+
+      @include on-tablet {
+        margin-block: 24px;
+      }
+    }
+
+    &--logo {
+      display: flex;
+      justify-content: center;
+      flex: 1;
+      margin-bottom: 8px;
+
+      @include on-tablet {
+        margin-bottom: 0;
+      }
+
+      :first-child {
+        height: 30px;
+
+        @include on-tablet {
+          height: 48px;
+        }
+
+        @include on-desktop {
+          height: 60px;
+        }
+      }
+    }
+  }
+}

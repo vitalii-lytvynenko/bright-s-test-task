@@ -1,0 +1,142 @@
+.footerb {
+  background-color: #f7f7f7;
+
+  &--hidden {
+    display: none;
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+
+    border-block: 1px solid #ccc;
+
+    padding-block: 20px;
+
+    &-text {
+      display: flex;
+      justify-content: center;
+
+      font-size: 0.9rem;
+      font-family: sans-serif;
+      font-weight: 600;
+    }
+
+    &-social {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  &__menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-decoration: none;
+    color: #333;
+  }
+
+  &__menu-icon {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+
+    &--fb {
+      background-image: url('../images/next/social-fb.svg');
+    }
+
+    &--x {
+      background-image: url('../images/next/social-x.svg');
+    }
+
+    &--tt {
+      background-image: url('../images/next/social-tt.svg');
+    }
+
+    &--inst {
+      background-image: url('../images/next/social-inst.svg');
+    }
+
+    &--pinterest {
+      background-image: url('../images/next/social-pinterest.svg');
+    }
+
+    &--yt {
+      background-image: url('../images/next/social-yt.svg');
+    }
+  }
+
+  &__menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+    text-align: left;
+    font-family: sans-serif;
+
+    background-color: #f7f7f7;
+
+    @include on-tablet {
+      flex-direction: row;
+    }
+
+    &-item {
+      padding-block: 20px;
+      border-bottom: 0.5 solid #ccc;
+
+      &:last-child {
+        border: none;
+      }
+
+      @include on-tablet {
+        border: none;
+      }
+
+      &-header {
+        font-weight: 600;
+      }
+
+      &-list {
+        display: none;
+        list-style: none;
+        padding: 0;
+        line-height: 2;
+
+        color: #333;
+
+        @include on-tablet {
+          display: block;
+        }
+
+        &-item:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  &-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-block: 10px;
+
+    border: 1px solid #ccc;
+  }
+}

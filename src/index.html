@@ -1,13 +1,532 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miami</title>
-    <link rel="stylesheet" href="./styles/main.scss">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bright Studios</title>
+    <link rel="stylesheet" href="./styles/main.scss" />
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/timer.js" defer></script>
   </head>
   <body>
-    <h1>Landing Page</h1>
+    <header class="header">
+      <div class="header__content">
+        <div class="header__top">
+          <a href="#" class="header__top--logo">
+            <img src="images/rakuten/logo.svg" alt="Rakuten logo" />
+          </a>
+          <div class="header__top--input">
+            <input
+              class="search--input"
+              type="text"
+              placeholder="Que cherchez-vous?"
+            />
+            <a class="icon icon--geo" href="#"></a>
+            <span class="icon--span">Rechercher autour de moi</span>
+            <button class="search--button">
+              <span class="search--logo"></span>
+            </button>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <div class="header__menu-item">
+            <a href="#" class="header__menu-link">
+              <span
+                class="header__menu-icon header__menu-icon--categories"
+              ></span>
+              <span
+                class="header__menu-text"
+                data-desktop="Parcourir les catégories"
+                data-mobile="Menu"
+              >
+                Parcourir les catégories
+              </span>
+            </a>
+          </div>
+          <div class="header__menu-item">
+            <a href="#" class="header__menu-link">
+              <span class="header__menu-icon header__menu-icon--sell"></span>
+              <span
+                class="header__menu-text"
+                data-desktop="Mettre en vente"
+                data-mobile="Vendre"
+              >
+                Mettre en vente
+              </span>
+            </a>
+          </div>
+          <div class="header__menu-item">
+            <a href="#" class="header__menu-link">
+              <span class="header__menu-icon header__menu-icon--help"></span>
+              <span
+                class="header__menu-text"
+                data-desktop="Aide"
+                data-mobile="Aide"
+              >
+                Aide
+              </span>
+            </a>
+          </div>
+          <div class="header__menu-item">
+            <a href="#" class="header__menu-link">
+              <span
+                class="header__menu-icon header__menu-icon--favourites"
+              ></span>
+              <span
+                class="header__menu-text"
+                data-desktop="Mes favoris"
+                data-mobile="Favoris"
+              >
+                Mes favoris
+              </span>
+            </a>
+          </div>
+          <div class="header__menu-item">
+            <a href="#" class="header__menu-link">
+              <span class="header__menu-icon header__menu-icon--account"></span>
+              <span
+                class="header__menu-text"
+                data-desktop="Se connecter"
+                data-mobile="Compte"
+              >
+                Se connecter
+              </span>
+            </a>
+          </div>
+          <div class="header__menu-item">
+            <a href="#" class="header__menu-link">
+              <span class="header__menu-icon header__menu-icon--cart"></span>
+              <span
+                class="header__menu-text"
+                data-desktop="Panier"
+                data-mobile="Panier"
+              >
+                Panier
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <header class="headerb headerb--hidden">
+      <div class="headerb__content">
+        <div class="headerb__top">
+          <div class="headerb__top--left">
+            <a href="#" class="headerb__top--logo">
+              <img src="images/next/logo.svg" alt="Next logo" />
+            </a>
+            <div class="headerb__top--input">
+              <input
+                class="searchb--input"
+                type="text"
+                placeholder="Search product or brand"
+              />
+              <button class="searchb--button">
+                <span class="searchb--logo"></span>
+              </button>
+            </div>
+          </div>
+          <div class="headerb__top--right">
+            <span class="account-text">My Account</span>
+            <span class="account-logo"></span>
+            <button class="checkout">CHECKOUT</button>
+            <button class="lang"></button>
+          </div>
+        </div>
+        <div class="headerb__bottom">
+          <div class="headerb__bottom-item">
+            <a href="#" class="headerb__bottom-item-link">christmas</a>
+          </div>
+          <div class="headerb__bottom-item">
+            <a href="#" class="headerb__bottom-item-link">women</a>
+          </div>
+          <div class="headerb__bottom-item">
+            <a href="#" class="headerb__bottom-item-link">men</a>
+          </div>
+          <div class="headerb__bottom-item">
+            <a href="#" class="headerb__bottom-item-link">girls</a>
+          </div>
+          <div class="headerb__bottom-item">
+            <a href="#" class="headerb__bottom-item-link">boys</a>
+          </div>
+          <div class="headerb__bottom-item">
+            <a href="#" class="headerb__bottom-item-link">baby</a>
+          </div>
+          <div class="headerb__bottom-item">
+            <a href="#" class="headerb__bottom-item-link">shoes</a>
+          </div>
+          <div class="headerb__bottom-item">
+            <a href="#" class="headerb__bottom-item-link">home</a>
+          </div>
+          <div class="headerb__bottom-item">
+            <a href="#" class="headerb__bottom-item-link">brands</a>
+          </div>
+          <div class="headerb__bottom-item">
+            <a href="#" class="headerb__bottom-item-link">clearance</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolores ut
+        sequi natus quos aliquam minima facere fugiat. Labore fugit dicta
+        voluptas quaerat, officia mollitia. Excepturi nesciunt voluptatem fuga
+        aliquam sit odit voluptatibus natus eius, placeat perferendis mollitia
+        iusto unde est alias ex vel molestiae. Repudiandae deleniti praesentium
+        ut facilis mollitia. Rem maxime, suscipit mollitia molestiae sit error
+        repellendus voluptatibus, dignissimos eaque, magnam officiis enim
+        voluptas! Ducimus, ea sapiente? Deserunt accusantium consequatur
+        laudantium libero voluptate ratione, eveniet eum doloremque, iste minus
+        itaque suscipit commodi aliquam incidunt ducimus cumque animi architecto
+        id vitae. Culpa sed velit doloremque nisi quibusdam dolor enim corporis
+        necessitatibus repellat ipsa! Rem voluptates ab esse expedita illum nemo
+        consequuntur soluta sit amet! Quae eius harum quod nesciunt corporis
+        assumenda impedit debitis nobis distinctio voluptatibus a ab suscipit
+        tenetur expedita, recusandae ad vitae unde laudantium, tempore id?
+        Labore iusto ratione incidunt praesentium quo! Impedit eos sequi iste
+        incidunt quisquam odit mollitia, nisi a officiis ea at perspiciatis
+        maxime hic molestias recusandae distinctio? Excepturi qui laboriosam
+        quod error aspernatur sed quam adipisci quisquam? Temporibus dicta ea
+        voluptate totam suscipit dolore nihil inventore, reiciendis placeat
+        officiis doloribus cupiditate velit at ratione nobis et perspiciatis id
+        atque, quos rem rerum praesentium!
+      </p>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolores ut
+        sequi natus quos aliquam minima facere fugiat. Labore fugit dicta
+        voluptas quaerat, officia mollitia. Excepturi nesciunt voluptatem fuga
+        aliquam sit odit voluptatibus natus eius, placeat perferendis mollitia
+        iusto unde est alias ex vel molestiae. Repudiandae deleniti praesentium
+        ut facilis mollitia. Rem maxime, suscipit mollitia molestiae sit error
+        repellendus voluptatibus, dignissimos eaque, magnam officiis enim
+        voluptas! Ducimus, ea sapiente? Deserunt accusantium consequatur
+        laudantium libero voluptate ratione, eveniet eum doloremque, iste minus
+        itaque suscipit commodi aliquam incidunt ducimus cumque animi architecto
+        id vitae. Culpa sed velit doloremque nisi quibusdam dolor enim corporis
+        necessitatibus repellat ipsa! Rem voluptates ab esse expedita illum nemo
+        consequuntur soluta sit amet! Quae eius harum quod nesciunt corporis
+        assumenda impedit debitis nobis distinctio voluptatibus a ab suscipit
+        tenetur expedita, recusandae ad vitae unde laudantium, tempore id?
+        Labore iusto ratione incidunt praesentium quo! Impedit eos sequi iste
+        incidunt quisquam odit mollitia, nisi a officiis ea at perspiciatis
+        maxime hic molestias recusandae distinctio? Excepturi qui laboriosam
+        quod error aspernatur sed quam adipisci quisquam? Temporibus dicta ea
+        voluptate totam suscipit dolore nihil inventore, reiciendis placeat
+        officiis doloribus cupiditate velit at ratione nobis et perspiciatis id
+        atque, quos rem rerum praesentium!
+      </p>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolores ut
+        sequi natus quos aliquam minima facere fugiat. Labore fugit dicta
+        voluptas quaerat, officia mollitia. Excepturi nesciunt voluptatem fuga
+        aliquam sit odit voluptatibus natus eius, placeat perferendis mollitia
+        iusto unde est alias ex vel molestiae. Repudiandae deleniti praesentium
+        ut facilis mollitia. Rem maxime, suscipit mollitia molestiae sit error
+        repellendus voluptatibus, dignissimos eaque, magnam officiis enim
+        voluptas! Ducimus, ea sapiente? Deserunt accusantium consequatur
+        laudantium libero voluptate ratione, eveniet eum doloremque, iste minus
+        itaque suscipit commodi aliquam incidunt ducimus cumque animi architecto
+        id vitae. Culpa sed velit doloremque nisi quibusdam dolor enim corporis
+        necessitatibus repellat ipsa! Rem voluptates ab esse expedita illum nemo
+        consequuntur soluta sit amet! Quae eius harum quod nesciunt corporis
+        assumenda impedit debitis nobis distinctio voluptatibus a ab suscipit
+        tenetur expedita, recusandae ad vitae unde laudantium, tempore id?
+        Labore iusto ratione incidunt praesentium quo! Impedit eos sequi iste
+        incidunt quisquam odit mollitia, nisi a officiis ea at perspiciatis
+        maxime hic molestias recusandae distinctio? Excepturi qui laboriosam
+        quod error aspernatur sed quam adipisci quisquam? Temporibus dicta ea
+        voluptate totam suscipit dolore nihil inventore, reiciendis placeat
+        officiis doloribus cupiditate velit at ratione nobis et perspiciatis id
+        atque, quos rem rerum praesentium!
+      </p>
+
+      <div class="timer-container">
+        <h2 id="timer">01:30</h2>
+      </div>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolores ut
+        sequi natus quos aliquam minima facere fugiat. Labore fugit dicta
+        voluptas quaerat, officia mollitia. Excepturi nesciunt voluptatem fuga
+        aliquam sit odit voluptatibus natus eius, placeat perferendis mollitia
+        iusto unde est alias ex vel molestiae. Repudiandae deleniti praesentium
+        ut facilis mollitia. Rem maxime, suscipit mollitia molestiae sit error
+        repellendus voluptatibus, dignissimos eaque, magnam officiis enim
+        voluptas! Ducimus, ea sapiente? Deserunt accusantium consequatur
+        laudantium libero voluptate ratione, eveniet eum doloremque, iste minus
+        itaque suscipit commodi aliquam incidunt ducimus cumque animi architecto
+        id vitae. Culpa sed velit doloremque nisi quibusdam dolor enim corporis
+        necessitatibus repellat ipsa! Rem voluptates ab esse expedita illum nemo
+        consequuntur soluta sit amet! Quae eius harum quod nesciunt corporis
+        assumenda impedit debitis nobis distinctio voluptatibus a ab suscipit
+        tenetur expedita, recusandae ad vitae unde laudantium, tempore id?
+        Labore iusto ratione incidunt praesentium quo! Impedit eos sequi iste
+        incidunt quisquam odit mollitia, nisi a officiis ea at perspiciatis
+        maxime hic molestias recusandae distinctio? Excepturi qui laboriosam
+        quod error aspernatur sed quam adipisci quisquam? Temporibus dicta ea
+        voluptate totam suscipit dolore nihil inventore, reiciendis placeat
+        officiis doloribus cupiditate velit at ratione nobis et perspiciatis id
+        atque, quos rem rerum praesentium!
+      </p>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolores ut
+        sequi natus quos aliquam minima facere fugiat. Labore fugit dicta
+        voluptas quaerat, officia mollitia. Excepturi nesciunt voluptatem fuga
+        aliquam sit odit voluptatibus natus eius, placeat perferendis mollitia
+        iusto unde est alias ex vel molestiae. Repudiandae deleniti praesentium
+        ut facilis mollitia. Rem maxime, suscipit mollitia molestiae sit error
+        repellendus voluptatibus, dignissimos eaque, magnam officiis enim
+        voluptas! Ducimus, ea sapiente? Deserunt accusantium consequatur
+        laudantium libero voluptate ratione, eveniet eum doloremque, iste minus
+        itaque suscipit commodi aliquam incidunt ducimus cumque animi architecto
+        id vitae. Culpa sed velit doloremque nisi quibusdam dolor enim corporis
+        necessitatibus repellat ipsa! Rem voluptates ab esse expedita illum nemo
+        consequuntur soluta sit amet! Quae eius harum quod nesciunt corporis
+        assumenda impedit debitis nobis distinctio voluptatibus a ab suscipit
+        tenetur expedita, recusandae ad vitae unde laudantium, tempore id?
+        Labore iusto ratione incidunt praesentium quo! Impedit eos sequi iste
+        incidunt quisquam odit mollitia, nisi a officiis ea at perspiciatis
+        maxime hic molestias recusandae distinctio? Excepturi qui laboriosam
+        quod error aspernatur sed quam adipisci quisquam? Temporibus dicta ea
+        voluptate totam suscipit dolore nihil inventore, reiciendis placeat
+        officiis doloribus cupiditate velit at ratione nobis et perspiciatis id
+        atque, quos rem rerum praesentium!
+      </p>
+
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo dolores ut
+        sequi natus quos aliquam minima facere fugiat. Labore fugit dicta
+        voluptas quaerat, officia mollitia. Excepturi nesciunt voluptatem fuga
+        aliquam sit odit voluptatibus natus eius, placeat perferendis mollitia
+        iusto unde est alias ex vel molestiae. Repudiandae deleniti praesentium
+        ut facilis mollitia. Rem maxime, suscipit mollitia molestiae sit error
+        repellendus voluptatibus, dignissimos eaque, magnam officiis enim
+        voluptas! Ducimus, ea sapiente? Deserunt accusantium consequatur
+        laudantium libero voluptate ratione, eveniet eum doloremque, iste minus
+        itaque suscipit commodi aliquam incidunt ducimus cumque animi architecto
+        id vitae. Culpa sed velit doloremque nisi quibusdam dolor enim corporis
+        necessitatibus repellat ipsa! Rem voluptates ab esse expedita illum nemo
+        consequuntur soluta sit amet! Quae eius harum quod nesciunt corporis
+        assumenda impedit debitis nobis distinctio voluptatibus a ab suscipit
+        tenetur expedita, recusandae ad vitae unde laudantium, tempore id?
+        Labore iusto ratione incidunt praesentium quo! Impedit eos sequi iste
+        incidunt quisquam odit mollitia, nisi a officiis ea at perspiciatis
+        maxime hic molestias recusandae distinctio? Excepturi qui laboriosam
+        quod error aspernatur sed quam adipisci quisquam? Temporibus dicta ea
+        voluptate totam suscipit dolore nihil inventore, reiciendis placeat
+        officiis doloribus cupiditate velit at ratione nobis et perspiciatis id
+        atque, quos rem rerum praesentium!
+      </p>
+    </main>
+
+    <div class="btn-up btn-up--hide"></div>
+
+    <footer class="footer">
+      <div class="footer__top">
+        <div class="footer__menu-item">
+          <a href="#" class="footer__menu-link">
+            <span class="footer__menu-icon footer__menu-icon--bag"></span>
+            <div class="footer__menu-text-block">
+              <span class="footer__menu-text footer__menu-text--top">
+                Le choix
+              </span>
+              <span class="footer__menu-text footer__menu-text--bottom">
+                Neuf et occasion
+              </span>
+            </div>
+          </a>
+        </div>
+        <div class="footer__menu-item">
+          <a href="#" class="footer__menu-link">
+            <span class="footer__menu-icon footer__menu-icon--club"></span>
+            <div class="footer__menu-text-block">
+              <span class="footer__menu-text footer__menu-text--top">
+                Minimum
+              </span>
+              <span class="footer__menu-text footer__menu-text--bottom">
+                5% remboursés
+              </span>
+            </div>
+          </a>
+        </div>
+        <div class="footer__menu-item">
+          <a href="#" class="footer__menu-link">
+            <span class="footer__menu-icon footer__menu-icon--protect"></span>
+            <div class="footer__menu-text-block">
+              <span class="footer__menu-text footer__menu-text--top">
+                La sécurité
+              </span>
+              <span class="footer__menu-text footer__menu-text--bottom">
+                Satisfait ou remboursé
+              </span>
+            </div>
+          </a>
+        </div>
+        <div class="footer__menu-item">
+          <a href="#" class="footer__menu-link">
+            <span class="footer__menu-icon footer__menu-icon--chat"></span>
+            <div class="footer__menu-text-block">
+              <span class="footer__menu-text footer__menu-text--top">
+                Le service clients
+              </span>
+              <span class="footer__menu-text footer__menu-text--bottom">
+                À votre écoute
+              </span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <ul class="footer__bottom">
+        <li class="footer__bottom-item">
+          <div class="footer__bottom-item-header">Lorem ipsum</div>
+          <ul class="footer__bottom-item-list">
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+          </ul>
+        </li>
+        <li class="footer__bottom-item">
+          <div class="footer__bottom-item-header">Lorem ipsum</div>
+          <ul class="footer__bottom-item-list">
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+          </ul>
+        </li>
+        <li class="footer__bottom-item">
+          <div class="footer__bottom-item-header">Lorem ipsum</div>
+          <ul class="footer__bottom-item-list">
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footer__bottom-item-list-item">Lorem, ipsum dolor.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="footer-copyright">
+        <div class="footer-copyright-line">
+          <a href="#" class="footer-copyright--logo">
+            <img src="images/rakuten/logo.svg" alt="Rakuten logo footer" />
+          </a>
+
+          <ul class="footer-copyright-products">
+            <li>Lorem.</li>
+            <li>Natus.</li>
+            <li>Velit!</li>
+            <li>Sapiente.</li>
+            <li>In?</li>
+            <li>Accusamus.</li>
+          </ul>
+        </div>
+        <div class="footer-copyright-end">© Rakuten France 2000 - 2024</div>
+      </div>
+    </footer>
+
+    <footer class="footerb footerb--hidden">
+      <div class="footerb__top">
+        <div class="footerb__top-text">Our Social Networks</div>
+        <div class="footerb__top-social">
+          <div class="footerb__menu-item">
+            <a href="#" class="footerb__menu-link">
+              <div class="footerb__menu-icon footerb__menu-icon--fb"></div>
+            </a>
+          </div>
+          <div class="footerb__menu-item">
+            <a href="#" class="footerb__menu-link">
+              <div class="footerb__menu-icon footerb__menu-icon--x"></div>
+            </a>
+          </div>
+          <div class="footerb__menu-item">
+            <a href="#" class="footerb__menu-link">
+              <div class="footerb__menu-icon footerb__menu-icon--tt"></div>
+            </a>
+          </div>
+          <div class="footerb__menu-item">
+            <a href="#" class="footerb__menu-link">
+              <div class="footerb__menu-icon footerb__menu-icon--inst"></div>
+            </a>
+          </div>
+          <div class="footerb__menu-item">
+            <a href="#" class="footerb__menu-link">
+              <div
+                class="footerb__menu-icon footerb__menu-icon--pinterest"
+              ></div>
+            </a>
+          </div>
+          <div class="footerb__menu-item">
+            <a href="#" class="footerb__menu-link">
+              <div class="footerb__menu-icon footerb__menu-icon--yt"></div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <ul class="footerb__bottom">
+        <li class="footerb__bottom-item">
+          <div class="footerb__bottom-item-header">Lorem ipsum</div>
+          <ul class="footerb__bottom-item-list">
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+          </ul>
+        </li>
+        <li class="footerb__bottom-item">
+          <div class="footerb__bottom-item-header">Lorem ipsum</div>
+          <ul class="footerb__bottom-item-list">
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+          </ul>
+        </li>
+        <li class="footerb__bottom-item">
+          <div class="footerb__bottom-item-header">Lorem ipsum</div>
+          <ul class="footerb__bottom-item-list">
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+          </ul>
+        </li>
+        <li class="footerb__bottom-item">
+          <div class="footerb__bottom-item-header">Lorem ipsum</div>
+          <ul class="footerb__bottom-item-list">
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+            <li class="footerb__bottom-item-list-item">Lorem, ipsum dolor.</li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="footerb-copyright">
+        © 2024 Next Retail Ltd. All rights reserved.
+      </div>
+    </footer>
   </body>
 </html>

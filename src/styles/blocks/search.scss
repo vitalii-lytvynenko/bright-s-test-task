@@ -1,0 +1,42 @@
+.search {
+  &--input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    padding: 8px 12px;
+    font-size: 0.7rem;
+
+    @include on-tablet {
+      font-size: 0.9rem;
+    }
+
+    @include on-desktop {
+      font-size: 1.2rem;
+    }
+  }
+
+  &--button {
+    height: 48px;
+    width: 48px;
+    margin-left: 8px;
+    background-color: #333;
+    border: 1px solid #333;
+    border-radius: 4px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &--logo {
+    display: block;
+
+    width: 24px;
+    height: 24px;
+    background-size: cover;
+    background-position: center;
+
+    background-image: url('../images/rakuten/search.svg');
+  }
+}

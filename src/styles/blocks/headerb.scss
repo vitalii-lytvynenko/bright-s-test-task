@@ -1,0 +1,157 @@
+.headerb {
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  transition:
+    opacity $effect-duration ease,
+    visibility $effect-duration ease;
+
+  &--hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  &__content {
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding-inline: 20px;
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 20px;
+
+    &--left {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    &--logo {
+      display: flex;
+      height: 24px;
+
+      @include on-tablet {
+        height: 36px;
+      }
+
+      @include on-desktop {
+        height: 42px;
+      }
+    }
+
+    &--input {
+      display: flex;
+      align-items: center;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      height: 24px;
+      width: 200px;
+      overflow: hidden;
+
+      @include on-tablet {
+        height: 28px;
+        width: 400px;
+      }
+
+      @include on-desktop {
+        height: 36px;
+      }
+    }
+
+    &--right {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+
+      .account {
+        &-text {
+          display: none;
+          font-size: 0.8rem;
+          font-family: sans-serif;
+          color: white;
+
+          @include on-desktop {
+            display: block;
+          }
+        }
+
+        &-logo {
+          display: block;
+          width: 24px;
+          height: 24px;
+          background-size: cover;
+          background-position: center;
+          background-image: url('../images/next/account.svg');
+        }
+      }
+
+      .checkout {
+        font-weight: 800;
+        background-color: green;
+        padding: 8px 16px;
+        border: 1px solid green;
+        border-radius: 6px;
+        color: white;
+        text-transform: uppercase;
+      }
+
+      .lang {
+        border: 2px solid white;
+        border-radius: 50%;
+        width: 24px;
+        height: 24px;
+        background-size: cover;
+        background-position: center;
+        background-image: url('../images/next/ie.png');
+      }
+    }
+  }
+
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+
+    &-item:first-child .headerb__bottom-item-link {
+      color: #b78b1f;
+    }
+
+    &-item:last-child .headerb__bottom-item-link {
+      color: #ff0000;
+    }
+
+    &-item {
+      padding: 10px;
+
+      &:hover {
+        background-color: white;
+
+        :first-child {
+          color: black;
+        }
+      }
+
+      &-link {
+        text-decoration: none;
+        color: white;
+
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+          sans-serif;
+        font-weight: 600;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
